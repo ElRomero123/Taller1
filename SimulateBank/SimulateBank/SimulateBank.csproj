@@ -51,10 +51,19 @@
     <Compile Include="FormularioLogin.Designer.cs">
       <DependentUpon>FormularioLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularioMenuCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioMenuCliente.Designer.cs">
+      <DependentUpon>FormularioMenuCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormularioLogin.resx">
       <DependentUpon>FormularioLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioMenuCliente.resx">
+      <DependentUpon>FormularioMenuCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
