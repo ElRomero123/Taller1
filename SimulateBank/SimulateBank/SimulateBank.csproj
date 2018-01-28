@@ -75,6 +75,12 @@
     <Compile Include="FormularioMenuCliente.Designer.cs">
       <DependentUpon>FormularioMenuCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularioTransaccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioTransaccion.Designer.cs">
+      <DependentUpon>FormularioTransaccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormularioDatosPersonales.resx">
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioMenuCliente.resx">
       <DependentUpon>FormularioMenuCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioTransaccion.resx">
+      <DependentUpon>FormularioTransaccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
