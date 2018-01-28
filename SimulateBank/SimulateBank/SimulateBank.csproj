@@ -51,6 +51,12 @@
     <Compile Include="FormularioLogin.Designer.cs">
       <DependentUpon>FormularioLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularioMenuAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioMenuAdministrador.Designer.cs">
+      <DependentUpon>FormularioMenuAdministrador.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioMenuCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormularioLogin.resx">
       <DependentUpon>FormularioLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioMenuAdministrador.resx">
+      <DependentUpon>FormularioMenuAdministrador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioMenuCliente.resx">
       <DependentUpon>FormularioMenuCliente.cs</DependentUpon>

@@ -1,6 +1,6 @@
 ﻿namespace SimulateBank
 {
-    partial class FormularioMenuCliente
+    partial class FormularioMenuAdministrador
     {
         /// <summary>
         /// Required designer variable.
@@ -31,12 +31,10 @@
             this.Grupo1 = new System.Windows.Forms.GroupBox();
             this.EtiquetaID = new System.Windows.Forms.Label();
             this.EtiquetaNombre = new System.Windows.Forms.Label();
-            this.BotonTransaccion = new System.Windows.Forms.Button();
-            this.BotonRetiro = new System.Windows.Forms.Button();
-            this.BotonConsulta = new System.Windows.Forms.Button();
-            this.Etiqueta1 = new System.Windows.Forms.Label();
             this.BotonSalir = new System.Windows.Forms.Button();
+            this.Etiqueta1 = new System.Windows.Forms.Label();
             this.BotonDatosPersonales = new System.Windows.Forms.Button();
+            this.BotonGestionClientes = new System.Windows.Forms.Button();
             this.Grupo1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +46,7 @@
             this.Grupo1.Location = new System.Drawing.Point(12, 12);
             this.Grupo1.Name = "Grupo1";
             this.Grupo1.Size = new System.Drawing.Size(384, 92);
-            this.Grupo1.TabIndex = 0;
+            this.Grupo1.TabIndex = 1;
             this.Grupo1.TabStop = false;
             this.Grupo1.Text = "Información";
             // 
@@ -70,80 +68,58 @@
             this.EtiquetaNombre.TabIndex = 1;
             this.EtiquetaNombre.Text = "Nombre:";
             // 
-            // BotonTransaccion
+            // BotonSalir
             // 
-            this.BotonTransaccion.Location = new System.Drawing.Point(12, 156);
-            this.BotonTransaccion.Name = "BotonTransaccion";
-            this.BotonTransaccion.Size = new System.Drawing.Size(189, 45);
-            this.BotonTransaccion.TabIndex = 1;
-            this.BotonTransaccion.Text = "Transacción.";
-            this.BotonTransaccion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BotonTransaccion.UseVisualStyleBackColor = true;
-            // 
-            // BotonRetiro
-            // 
-            this.BotonRetiro.Location = new System.Drawing.Point(207, 156);
-            this.BotonRetiro.Name = "BotonRetiro";
-            this.BotonRetiro.Size = new System.Drawing.Size(189, 45);
-            this.BotonRetiro.TabIndex = 2;
-            this.BotonRetiro.Text = "Retirar dinero.";
-            this.BotonRetiro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BotonRetiro.UseVisualStyleBackColor = true;
-            // 
-            // BotonConsulta
-            // 
-            this.BotonConsulta.Location = new System.Drawing.Point(402, 156);
-            this.BotonConsulta.Name = "BotonConsulta";
-            this.BotonConsulta.Size = new System.Drawing.Size(189, 45);
-            this.BotonConsulta.TabIndex = 3;
-            this.BotonConsulta.Text = "Consultar saldo.";
-            this.BotonConsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BotonConsulta.UseVisualStyleBackColor = true;
+            this.BotonSalir.Location = new System.Drawing.Point(402, 12);
+            this.BotonSalir.Name = "BotonSalir";
+            this.BotonSalir.Size = new System.Drawing.Size(118, 45);
+            this.BotonSalir.TabIndex = 6;
+            this.BotonSalir.Text = "Cerrar sesión.";
+            this.BotonSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BotonSalir.UseVisualStyleBackColor = true;
             // 
             // Etiqueta1
             // 
             this.Etiqueta1.AutoSize = true;
             this.Etiqueta1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Etiqueta1.Location = new System.Drawing.Point(9, 123);
+            this.Etiqueta1.Location = new System.Drawing.Point(8, 129);
             this.Etiqueta1.Name = "Etiqueta1";
-            this.Etiqueta1.Size = new System.Drawing.Size(329, 24);
-            this.Etiqueta1.TabIndex = 4;
-            this.Etiqueta1.Text = "Apreciado cliente ¿Que desea hacer?";
-            // 
-            // BotonSalir
-            // 
-            this.BotonSalir.Location = new System.Drawing.Point(474, 12);
-            this.BotonSalir.Name = "BotonSalir";
-            this.BotonSalir.Size = new System.Drawing.Size(118, 45);
-            this.BotonSalir.TabIndex = 5;
-            this.BotonSalir.Text = "Cerrar sesión.";
-            this.BotonSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BotonSalir.UseVisualStyleBackColor = true;
+            this.Etiqueta1.Size = new System.Drawing.Size(387, 24);
+            this.Etiqueta1.TabIndex = 10;
+            this.Etiqueta1.Text = "Señor administrador. Cual tarea va a realizar?";
             // 
             // BotonDatosPersonales
             // 
-            this.BotonDatosPersonales.Location = new System.Drawing.Point(12, 215);
+            this.BotonDatosPersonales.Location = new System.Drawing.Point(206, 162);
             this.BotonDatosPersonales.Name = "BotonDatosPersonales";
             this.BotonDatosPersonales.Size = new System.Drawing.Size(189, 45);
-            this.BotonDatosPersonales.TabIndex = 6;
+            this.BotonDatosPersonales.TabIndex = 8;
             this.BotonDatosPersonales.Text = "Modificar datos personales.";
             this.BotonDatosPersonales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BotonDatosPersonales.UseVisualStyleBackColor = true;
             // 
-            // FormularioMenuCliente
+            // BotonGestionClientes
+            // 
+            this.BotonGestionClientes.Location = new System.Drawing.Point(11, 162);
+            this.BotonGestionClientes.Name = "BotonGestionClientes";
+            this.BotonGestionClientes.Size = new System.Drawing.Size(189, 45);
+            this.BotonGestionClientes.TabIndex = 7;
+            this.BotonGestionClientes.Text = "Gestionar clientes.";
+            this.BotonGestionClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BotonGestionClientes.UseVisualStyleBackColor = true;
+            // 
+            // FormularioMenuAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(604, 272);
-            this.Controls.Add(this.BotonDatosPersonales);
-            this.Controls.Add(this.BotonSalir);
+            this.ClientSize = new System.Drawing.Size(533, 232);
             this.Controls.Add(this.Etiqueta1);
-            this.Controls.Add(this.BotonConsulta);
-            this.Controls.Add(this.BotonRetiro);
-            this.Controls.Add(this.BotonTransaccion);
+            this.Controls.Add(this.BotonDatosPersonales);
+            this.Controls.Add(this.BotonGestionClientes);
+            this.Controls.Add(this.BotonSalir);
             this.Controls.Add(this.Grupo1);
-            this.Name = "FormularioMenuCliente";
-            this.Text = "Cliente";
+            this.Name = "FormularioMenuAdministrador";
+            this.Text = "Administrador";
             this.Grupo1.ResumeLayout(false);
             this.Grupo1.PerformLayout();
             this.ResumeLayout(false);
@@ -157,10 +133,8 @@
         private System.Windows.Forms.Label EtiquetaID;
         private System.Windows.Forms.Label EtiquetaNombre;
         private System.Windows.Forms.Label Etiqueta1;
-        private System.Windows.Forms.Button BotonTransaccion;
-        private System.Windows.Forms.Button BotonRetiro;
-        private System.Windows.Forms.Button BotonConsulta;
-        private System.Windows.Forms.Button BotonSalir;
+        private System.Windows.Forms.Button BotonGestionClientes;
         private System.Windows.Forms.Button BotonDatosPersonales;
+        private System.Windows.Forms.Button BotonSalir;
     }
 }
