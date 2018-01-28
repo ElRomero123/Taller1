@@ -347,32 +347,32 @@
         #endregion
 
         private System.Windows.Forms.GroupBox Grupo1;
-        private System.Windows.Forms.Label Etiqueta2;
-        private System.Windows.Forms.Label Etiqueta1;
-        private System.Windows.Forms.TextBox CampoDireccion;
-        private System.Windows.Forms.Label Etiqueta4;
-        private System.Windows.Forms.TextBox CampoEmail;
-        private System.Windows.Forms.TextBox CampoTelefono;
-        private System.Windows.Forms.TextBox CampoDocumento;
-        private System.Windows.Forms.Label Etiqueta6;
-        private System.Windows.Forms.TextBox CampoApellido;
-        private System.Windows.Forms.Label Etiqueta5;
-        private System.Windows.Forms.TextBox CampoNombre;
-        private System.Windows.Forms.Label Etiqueta3;
-        private System.Windows.Forms.Label Etiqueta10;
-        private System.Windows.Forms.TextBox CampoSaldo;
         private System.Windows.Forms.GroupBox Grupo2;
-        private System.Windows.Forms.TextBox CampoID;
-        private System.Windows.Forms.TextBox CampoPasswordAgain;
-        private System.Windows.Forms.TextBox CampoPassword;
-        private System.Windows.Forms.Label Etiqueta9;
-        private System.Windows.Forms.Label Etiqueta8;
-        private System.Windows.Forms.Label Etiqueta7;
-        private System.Windows.Forms.GroupBox Grupo4;
-        private System.Windows.Forms.Button BotonEliminar;
-        private System.Windows.Forms.Button BotonActualizar;
-        private System.Windows.Forms.Button BotonBuscar;
-        private System.Windows.Forms.Button BotonAgregar;
         private System.Windows.Forms.GroupBox Grupo3;
+        private System.Windows.Forms.GroupBox Grupo4;
+        private System.Windows.Forms.Label Etiqueta1;
+        private System.Windows.Forms.Label Etiqueta2;
+        private System.Windows.Forms.Label Etiqueta3;
+        private System.Windows.Forms.Label Etiqueta4;
+        private System.Windows.Forms.Label Etiqueta5;
+        private System.Windows.Forms.Label Etiqueta6;
+        private System.Windows.Forms.Label Etiqueta7;
+        private System.Windows.Forms.Label Etiqueta8;
+        private System.Windows.Forms.Label Etiqueta9;
+        private System.Windows.Forms.Label Etiqueta10;
+        private System.Windows.Forms.TextBox CampoNombre;
+        private System.Windows.Forms.TextBox CampoApellido;
+        private System.Windows.Forms.TextBox CampoDocumento;
+        private System.Windows.Forms.TextBox CampoDireccion;
+        private System.Windows.Forms.TextBox CampoTelefono;
+        private System.Windows.Forms.TextBox CampoEmail;
+        private System.Windows.Forms.TextBox CampoID;
+        private System.Windows.Forms.TextBox CampoPassword;
+        private System.Windows.Forms.TextBox CampoPasswordAgain;
+        private System.Windows.Forms.TextBox CampoSaldo;
+        private System.Windows.Forms.Button BotonAgregar;
+        private System.Windows.Forms.Button BotonBuscar;
+        private System.Windows.Forms.Button BotonActualizar;
+        private System.Windows.Forms.Button BotonEliminar;   
     }
 }
