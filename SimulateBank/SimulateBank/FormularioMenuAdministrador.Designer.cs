@@ -31,10 +31,10 @@
             this.Grupo1 = new System.Windows.Forms.GroupBox();
             this.EtiquetaID = new System.Windows.Forms.Label();
             this.EtiquetaNombre = new System.Windows.Forms.Label();
-            this.BotonSalir = new System.Windows.Forms.Button();
             this.Etiqueta1 = new System.Windows.Forms.Label();
-            this.BotonDatosPersonales = new System.Windows.Forms.Button();
             this.BotonGestionClientes = new System.Windows.Forms.Button();
+            this.BotonDatosPersonales = new System.Windows.Forms.Button();
+            this.BotonSalir = new System.Windows.Forms.Button();
             this.Grupo1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,16 +68,6 @@
             this.EtiquetaNombre.TabIndex = 1;
             this.EtiquetaNombre.Text = "Nombre:";
             // 
-            // BotonSalir
-            // 
-            this.BotonSalir.Location = new System.Drawing.Point(402, 12);
-            this.BotonSalir.Name = "BotonSalir";
-            this.BotonSalir.Size = new System.Drawing.Size(118, 45);
-            this.BotonSalir.TabIndex = 6;
-            this.BotonSalir.Text = "Cerrar sesión.";
-            this.BotonSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BotonSalir.UseVisualStyleBackColor = true;
-            // 
             // Etiqueta1
             // 
             this.Etiqueta1.AutoSize = true;
@@ -87,16 +77,6 @@
             this.Etiqueta1.Size = new System.Drawing.Size(387, 24);
             this.Etiqueta1.TabIndex = 10;
             this.Etiqueta1.Text = "Señor administrador. Cual tarea va a realizar?";
-            // 
-            // BotonDatosPersonales
-            // 
-            this.BotonDatosPersonales.Location = new System.Drawing.Point(206, 162);
-            this.BotonDatosPersonales.Name = "BotonDatosPersonales";
-            this.BotonDatosPersonales.Size = new System.Drawing.Size(189, 45);
-            this.BotonDatosPersonales.TabIndex = 8;
-            this.BotonDatosPersonales.Text = "Modificar datos personales.";
-            this.BotonDatosPersonales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BotonDatosPersonales.UseVisualStyleBackColor = true;
             // 
             // BotonGestionClientes
             // 
@@ -108,23 +88,42 @@
             this.BotonGestionClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BotonGestionClientes.UseVisualStyleBackColor = true;
             // 
+            // BotonDatosPersonales
+            // 
+            this.BotonDatosPersonales.Location = new System.Drawing.Point(206, 162);
+            this.BotonDatosPersonales.Name = "BotonDatosPersonales";
+            this.BotonDatosPersonales.Size = new System.Drawing.Size(189, 45);
+            this.BotonDatosPersonales.TabIndex = 8;
+            this.BotonDatosPersonales.Text = "Modificar datos personales.";
+            this.BotonDatosPersonales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BotonDatosPersonales.UseVisualStyleBackColor = true;
+            // 
+            // BotonSalir
+            // 
+            this.BotonSalir.Location = new System.Drawing.Point(402, 12);
+            this.BotonSalir.Name = "BotonSalir";
+            this.BotonSalir.Size = new System.Drawing.Size(118, 45);
+            this.BotonSalir.TabIndex = 6;
+            this.BotonSalir.Text = "Cerrar sesión.";
+            this.BotonSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BotonSalir.UseVisualStyleBackColor = true;
+            // 
             // FormularioMenuAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(533, 232);
-            this.Controls.Add(this.Etiqueta1);
-            this.Controls.Add(this.BotonDatosPersonales);
-            this.Controls.Add(this.BotonGestionClientes);
-            this.Controls.Add(this.BotonSalir);
             this.Controls.Add(this.Grupo1);
+            this.Controls.Add(this.Etiqueta1);
+            this.Controls.Add(this.BotonGestionClientes);
+            this.Controls.Add(this.BotonDatosPersonales);
+            this.Controls.Add(this.BotonSalir);
             this.Name = "FormularioMenuAdministrador";
             this.Text = "Administrador";
             this.Grupo1.ResumeLayout(false);
             this.Grupo1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
