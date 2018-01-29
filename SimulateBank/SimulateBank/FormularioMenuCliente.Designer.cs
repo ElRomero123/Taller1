@@ -79,6 +79,7 @@
             this.BotonTransaccion.Text = "Transacción.";
             this.BotonTransaccion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BotonTransaccion.UseVisualStyleBackColor = true;
+            this.BotonTransaccion.Click += new System.EventHandler(this.BotonTransaccion_Click);
             // 
             // BotonRetiro
             // 
@@ -89,6 +90,7 @@
             this.BotonRetiro.Text = "Retirar dinero.";
             this.BotonRetiro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BotonRetiro.UseVisualStyleBackColor = true;
+            this.BotonRetiro.Click += new System.EventHandler(this.BotonRetiro_Click);
             // 
             // BotonConsulta
             // 
@@ -99,6 +101,7 @@
             this.BotonConsulta.Text = "Consultar saldo.";
             this.BotonConsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BotonConsulta.UseVisualStyleBackColor = true;
+            this.BotonConsulta.Click += new System.EventHandler(this.BotonConsulta_Click);
             // 
             // Etiqueta1
             // 
@@ -119,6 +122,7 @@
             this.BotonSalir.Text = "Cerrar sesión.";
             this.BotonSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BotonSalir.UseVisualStyleBackColor = true;
+            this.BotonSalir.Click += new System.EventHandler(this.BotonSalir_Click);
             // 
             // BotonDatosPersonales
             // 
@@ -129,6 +133,7 @@
             this.BotonDatosPersonales.Text = "Modificar datos personales.";
             this.BotonDatosPersonales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BotonDatosPersonales.UseVisualStyleBackColor = true;
+            this.BotonDatosPersonales.Click += new System.EventHandler(this.BotonDatosPersonales_Click);
             // 
             // FormularioMenuCliente
             // 

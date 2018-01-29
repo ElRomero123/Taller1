@@ -109,6 +109,7 @@
             this.BotonSalir.Text = "Cerrar sesión.";
             this.BotonSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BotonSalir.UseVisualStyleBackColor = true;
+            this.BotonSalir.Click += new System.EventHandler(this.BotonSalir_Click);
             // 
             // FormularioMenuAdministrador
             // 

@@ -28,5 +28,12 @@ namespace SimulateBank
             FormularioDatosPersonales DatosPersonales = new FormularioDatosPersonales();
             DatosPersonales.Show();
         }
+
+        private void BotonSalir_Click(object sender, EventArgs e)
+        {
+            FormularioLogin Login = new FormularioLogin();
+            Login.Show();
+            SetVisibleCore(false);
+        }
     }
 }
