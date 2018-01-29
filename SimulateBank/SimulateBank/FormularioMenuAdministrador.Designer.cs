@@ -87,6 +87,7 @@
             this.BotonGestionClientes.Text = "Gestionar clientes.";
             this.BotonGestionClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BotonGestionClientes.UseVisualStyleBackColor = true;
+            this.BotonGestionClientes.Click += new System.EventHandler(this.BotonGestionClientes_Click);
             // 
             // BotonDatosPersonales
             // 
@@ -97,6 +98,7 @@
             this.BotonDatosPersonales.Text = "Modificar datos personales.";
             this.BotonDatosPersonales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BotonDatosPersonales.UseVisualStyleBackColor = true;
+            this.BotonDatosPersonales.Click += new System.EventHandler(this.BotonDatosPersonales_Click);
             // 
             // BotonSalir
             // 
@@ -124,6 +126,7 @@
             this.Grupo1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

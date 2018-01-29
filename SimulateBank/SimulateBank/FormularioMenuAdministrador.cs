@@ -16,5 +16,17 @@ namespace SimulateBank
         {
             InitializeComponent();
         }
+
+        private void BotonGestionClientes_Click(object sender, EventArgs e)
+        {
+            FormularioGestionClientes GestionClientes = new FormularioGestionClientes();
+            GestionClientes.Show();
+        }
+
+        private void BotonDatosPersonales_Click(object sender, EventArgs e)
+        {
+            FormularioDatosPersonales DatosPersonales = new FormularioDatosPersonales();
+            DatosPersonales.Show();
+        }
     }
 }
