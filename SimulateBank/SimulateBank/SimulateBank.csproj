@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormularioConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioConsulta.Designer.cs">
+      <DependentUpon>FormularioConsulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioDatosPersonales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormularioConsulta.resx">
+      <DependentUpon>FormularioConsulta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormularioDatosPersonales.resx">
       <DependentUpon>FormularioDatosPersonales.cs</DependentUpon>
     </EmbeddedResource>
