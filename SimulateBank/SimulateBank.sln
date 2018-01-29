@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulateBank", "SimulateBank\SimulateBank.csproj", "{5E4B529C-EA6B-4A91-A3F5-80740719E684}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Broker", "Broker\Broker.csproj", "{59CCC238-5769-42A5-BCEC-5CD1FAEEA8C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5E4B529C-EA6B-4A91-A3F5-80740719E684}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E4B529C-EA6B-4A91-A3F5-80740719E684}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E4B529C-EA6B-4A91-A3F5-80740719E684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59CCC238-5769-42A5-BCEC-5CD1FAEEA8C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59CCC238-5769-42A5-BCEC-5CD1FAEEA8C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59CCC238-5769-42A5-BCEC-5CD1FAEEA8C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59CCC238-5769-42A5-BCEC-5CD1FAEEA8C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
