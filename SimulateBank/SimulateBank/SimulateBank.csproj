@@ -81,6 +81,12 @@
     <Compile Include="FormularioMenuCliente.Designer.cs">
       <DependentUpon>FormularioMenuCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularioRetiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioRetiro.Designer.cs">
+      <DependentUpon>FormularioRetiro.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioTransaccion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioMenuCliente.resx">
       <DependentUpon>FormularioMenuCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioRetiro.resx">
+      <DependentUpon>FormularioRetiro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioTransaccion.resx">
       <DependentUpon>FormularioTransaccion.cs</DependentUpon>
