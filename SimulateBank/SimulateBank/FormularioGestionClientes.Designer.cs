@@ -29,37 +29,39 @@
         private void InitializeComponent()
         {
             this.Grupo1 = new System.Windows.Forms.GroupBox();
-            this.Etiqueta2 = new System.Windows.Forms.Label();
-            this.Etiqueta1 = new System.Windows.Forms.Label();
-            this.Etiqueta3 = new System.Windows.Forms.Label();
-            this.Etiqueta10 = new System.Windows.Forms.Label();
-            this.Etiqueta5 = new System.Windows.Forms.Label();
-            this.Etiqueta6 = new System.Windows.Forms.Label();
-            this.CampoNombre = new System.Windows.Forms.TextBox();
-            this.CampoApellido = new System.Windows.Forms.TextBox();
-            this.CampoDocumento = new System.Windows.Forms.TextBox();
-            this.CampoSaldo = new System.Windows.Forms.TextBox();
-            this.CampoTelefono = new System.Windows.Forms.TextBox();
+            this.CampoDireccion = new System.Windows.Forms.TextBox();
+            this.Etiqueta4 = new System.Windows.Forms.Label();
             this.CampoEmail = new System.Windows.Forms.TextBox();
+            this.CampoTelefono = new System.Windows.Forms.TextBox();
+            this.CampoDocumento = new System.Windows.Forms.TextBox();
+            this.Etiqueta6 = new System.Windows.Forms.Label();
+            this.CampoApellido = new System.Windows.Forms.TextBox();
+            this.Etiqueta5 = new System.Windows.Forms.Label();
+            this.CampoNombre = new System.Windows.Forms.TextBox();
+            this.Etiqueta2 = new System.Windows.Forms.Label();
+            this.Etiqueta3 = new System.Windows.Forms.Label();
+            this.Etiqueta1 = new System.Windows.Forms.Label();
             this.Grupo2 = new System.Windows.Forms.GroupBox();
+            this.CampoID = new System.Windows.Forms.TextBox();
             this.CampoPasswordAgain = new System.Windows.Forms.TextBox();
             this.CampoPassword = new System.Windows.Forms.TextBox();
-            this.CampoID = new System.Windows.Forms.TextBox();
             this.Etiqueta9 = new System.Windows.Forms.Label();
             this.Etiqueta8 = new System.Windows.Forms.Label();
             this.Etiqueta7 = new System.Windows.Forms.Label();
-            this.Etiqueta4 = new System.Windows.Forms.Label();
-            this.CampoDireccion = new System.Windows.Forms.TextBox();
             this.Grupo4 = new System.Windows.Forms.GroupBox();
-            this.BotonAgregar = new System.Windows.Forms.Button();
-            this.BotonBuscar = new System.Windows.Forms.Button();
-            this.BotonActualizar = new System.Windows.Forms.Button();
             this.BotonEliminar = new System.Windows.Forms.Button();
+            this.BotonActualizar = new System.Windows.Forms.Button();
+            this.BotonBuscar = new System.Windows.Forms.Button();
+            this.BotonAgregar = new System.Windows.Forms.Button();
             this.Grupo3 = new System.Windows.Forms.GroupBox();
+            this.Grupo5 = new System.Windows.Forms.GroupBox();
+            this.EtiquetaEstado = new System.Windows.Forms.Label();
+            this.BotonInformacionFinanciera = new System.Windows.Forms.Button();
             this.Grupo1.SuspendLayout();
             this.Grupo2.SuspendLayout();
             this.Grupo4.SuspendLayout();
             this.Grupo3.SuspendLayout();
+            this.Grupo5.SuspendLayout();
             this.SuspendLayout();
             // 
             // Grupo1
@@ -84,50 +86,42 @@
             this.Grupo1.TabStop = false;
             this.Grupo1.Text = " Información personal";
             // 
-            // Etiqueta2
+            // CampoDireccion
             // 
-            this.Etiqueta2.AutoSize = true;
-            this.Etiqueta2.Location = new System.Drawing.Point(17, 54);
-            this.Etiqueta2.Name = "Etiqueta2";
-            this.Etiqueta2.Size = new System.Drawing.Size(69, 17);
-            this.Etiqueta2.TabIndex = 2;
-            this.Etiqueta2.Text = "Apellidos:";
+            this.CampoDireccion.Location = new System.Drawing.Point(127, 108);
+            this.CampoDireccion.Name = "CampoDireccion";
+            this.CampoDireccion.Size = new System.Drawing.Size(241, 22);
+            this.CampoDireccion.TabIndex = 14;
             // 
-            // Etiqueta1
+            // Etiqueta4
             // 
-            this.Etiqueta1.AutoSize = true;
-            this.Etiqueta1.Location = new System.Drawing.Point(17, 25);
-            this.Etiqueta1.Name = "Etiqueta1";
-            this.Etiqueta1.Size = new System.Drawing.Size(69, 17);
-            this.Etiqueta1.TabIndex = 1;
-            this.Etiqueta1.Text = "Nombres:";
+            this.Etiqueta4.AutoSize = true;
+            this.Etiqueta4.Location = new System.Drawing.Point(17, 111);
+            this.Etiqueta4.Name = "Etiqueta4";
+            this.Etiqueta4.Size = new System.Drawing.Size(71, 17);
+            this.Etiqueta4.TabIndex = 13;
+            this.Etiqueta4.Text = "Dirección:";
             // 
-            // Etiqueta3
+            // CampoEmail
             // 
-            this.Etiqueta3.AutoSize = true;
-            this.Etiqueta3.Location = new System.Drawing.Point(17, 83);
-            this.Etiqueta3.Name = "Etiqueta3";
-            this.Etiqueta3.Size = new System.Drawing.Size(104, 17);
-            this.Etiqueta3.TabIndex = 3;
-            this.Etiqueta3.Text = "N° Documento:";
+            this.CampoEmail.Location = new System.Drawing.Point(127, 164);
+            this.CampoEmail.Name = "CampoEmail";
+            this.CampoEmail.Size = new System.Drawing.Size(241, 22);
+            this.CampoEmail.TabIndex = 12;
             // 
-            // Etiqueta10
+            // CampoTelefono
             // 
-            this.Etiqueta10.AutoSize = true;
-            this.Etiqueta10.Location = new System.Drawing.Point(12, 30);
-            this.Etiqueta10.Name = "Etiqueta10";
-            this.Etiqueta10.Size = new System.Drawing.Size(117, 17);
-            this.Etiqueta10.TabIndex = 4;
-            this.Etiqueta10.Text = "Saldo a registrar:";
+            this.CampoTelefono.Location = new System.Drawing.Point(127, 136);
+            this.CampoTelefono.Name = "CampoTelefono";
+            this.CampoTelefono.Size = new System.Drawing.Size(241, 22);
+            this.CampoTelefono.TabIndex = 11;
             // 
-            // Etiqueta5
+            // CampoDocumento
             // 
-            this.Etiqueta5.AutoSize = true;
-            this.Etiqueta5.Location = new System.Drawing.Point(17, 139);
-            this.Etiqueta5.Name = "Etiqueta5";
-            this.Etiqueta5.Size = new System.Drawing.Size(68, 17);
-            this.Etiqueta5.TabIndex = 5;
-            this.Etiqueta5.Text = "Teléfono:";
+            this.CampoDocumento.Location = new System.Drawing.Point(127, 80);
+            this.CampoDocumento.Name = "CampoDocumento";
+            this.CampoDocumento.Size = new System.Drawing.Size(241, 22);
+            this.CampoDocumento.TabIndex = 9;
             // 
             // Etiqueta6
             // 
@@ -138,13 +132,6 @@
             this.Etiqueta6.TabIndex = 6;
             this.Etiqueta6.Text = "E-mail:";
             // 
-            // CampoNombre
-            // 
-            this.CampoNombre.Location = new System.Drawing.Point(127, 22);
-            this.CampoNombre.Name = "CampoNombre";
-            this.CampoNombre.Size = new System.Drawing.Size(241, 22);
-            this.CampoNombre.TabIndex = 7;
-            // 
             // CampoApellido
             // 
             this.CampoApellido.Location = new System.Drawing.Point(127, 51);
@@ -152,33 +139,48 @@
             this.CampoApellido.Size = new System.Drawing.Size(241, 22);
             this.CampoApellido.TabIndex = 8;
             // 
-            // CampoDocumento
+            // Etiqueta5
             // 
-            this.CampoDocumento.Location = new System.Drawing.Point(127, 80);
-            this.CampoDocumento.Name = "CampoDocumento";
-            this.CampoDocumento.Size = new System.Drawing.Size(241, 22);
-            this.CampoDocumento.TabIndex = 9;
+            this.Etiqueta5.AutoSize = true;
+            this.Etiqueta5.Location = new System.Drawing.Point(17, 139);
+            this.Etiqueta5.Name = "Etiqueta5";
+            this.Etiqueta5.Size = new System.Drawing.Size(68, 17);
+            this.Etiqueta5.TabIndex = 5;
+            this.Etiqueta5.Text = "Teléfono:";
             // 
-            // CampoSaldo
+            // CampoNombre
             // 
-            this.CampoSaldo.Location = new System.Drawing.Point(135, 27);
-            this.CampoSaldo.Name = "CampoSaldo";
-            this.CampoSaldo.Size = new System.Drawing.Size(241, 22);
-            this.CampoSaldo.TabIndex = 10;
+            this.CampoNombre.Location = new System.Drawing.Point(127, 22);
+            this.CampoNombre.Name = "CampoNombre";
+            this.CampoNombre.Size = new System.Drawing.Size(241, 22);
+            this.CampoNombre.TabIndex = 7;
             // 
-            // CampoTelefono
+            // Etiqueta2
             // 
-            this.CampoTelefono.Location = new System.Drawing.Point(127, 136);
-            this.CampoTelefono.Name = "CampoTelefono";
-            this.CampoTelefono.Size = new System.Drawing.Size(241, 22);
-            this.CampoTelefono.TabIndex = 11;
+            this.Etiqueta2.AutoSize = true;
+            this.Etiqueta2.Location = new System.Drawing.Point(17, 54);
+            this.Etiqueta2.Name = "Etiqueta2";
+            this.Etiqueta2.Size = new System.Drawing.Size(69, 17);
+            this.Etiqueta2.TabIndex = 2;
+            this.Etiqueta2.Text = "Apellidos:";
             // 
-            // CampoEmail
+            // Etiqueta3
             // 
-            this.CampoEmail.Location = new System.Drawing.Point(127, 164);
-            this.CampoEmail.Name = "CampoEmail";
-            this.CampoEmail.Size = new System.Drawing.Size(241, 22);
-            this.CampoEmail.TabIndex = 12;
+            this.Etiqueta3.AutoSize = true;
+            this.Etiqueta3.Location = new System.Drawing.Point(17, 83);
+            this.Etiqueta3.Name = "Etiqueta3";
+            this.Etiqueta3.Size = new System.Drawing.Size(104, 17);
+            this.Etiqueta3.TabIndex = 3;
+            this.Etiqueta3.Text = "N° Documento:";
+            // 
+            // Etiqueta1
+            // 
+            this.Etiqueta1.AutoSize = true;
+            this.Etiqueta1.Location = new System.Drawing.Point(17, 25);
+            this.Etiqueta1.Name = "Etiqueta1";
+            this.Etiqueta1.Size = new System.Drawing.Size(69, 17);
+            this.Etiqueta1.TabIndex = 1;
+            this.Etiqueta1.Text = "Nombres:";
             // 
             // Grupo2
             // 
@@ -196,6 +198,13 @@
             this.Grupo2.TabStop = false;
             this.Grupo2.Text = " Información de registro";
             // 
+            // CampoID
+            // 
+            this.CampoID.Location = new System.Drawing.Point(151, 23);
+            this.CampoID.Name = "CampoID";
+            this.CampoID.Size = new System.Drawing.Size(241, 22);
+            this.CampoID.TabIndex = 7;
+            // 
             // CampoPasswordAgain
             // 
             this.CampoPasswordAgain.Location = new System.Drawing.Point(151, 79);
@@ -209,13 +218,6 @@
             this.CampoPassword.Name = "CampoPassword";
             this.CampoPassword.Size = new System.Drawing.Size(241, 22);
             this.CampoPassword.TabIndex = 8;
-            // 
-            // CampoID
-            // 
-            this.CampoID.Location = new System.Drawing.Point(151, 23);
-            this.CampoID.Name = "CampoID";
-            this.CampoID.Size = new System.Drawing.Size(241, 22);
-            this.CampoID.TabIndex = 7;
             // 
             // Etiqueta9
             // 
@@ -244,22 +246,6 @@
             this.Etiqueta7.TabIndex = 1;
             this.Etiqueta7.Text = "ID:";
             // 
-            // Etiqueta4
-            // 
-            this.Etiqueta4.AutoSize = true;
-            this.Etiqueta4.Location = new System.Drawing.Point(17, 111);
-            this.Etiqueta4.Name = "Etiqueta4";
-            this.Etiqueta4.Size = new System.Drawing.Size(71, 17);
-            this.Etiqueta4.TabIndex = 13;
-            this.Etiqueta4.Text = "Dirección:";
-            // 
-            // CampoDireccion
-            // 
-            this.CampoDireccion.Location = new System.Drawing.Point(127, 108);
-            this.CampoDireccion.Name = "CampoDireccion";
-            this.CampoDireccion.Size = new System.Drawing.Size(241, 22);
-            this.CampoDireccion.TabIndex = 14;
-            // 
             // Grupo4
             // 
             this.Grupo4.Controls.Add(this.BotonEliminar);
@@ -274,23 +260,15 @@
             this.Grupo4.TabStop = false;
             this.Grupo4.Text = "Opciones";
             // 
-            // BotonAgregar
+            // BotonEliminar
             // 
-            this.BotonAgregar.Location = new System.Drawing.Point(9, 39);
-            this.BotonAgregar.Name = "BotonAgregar";
-            this.BotonAgregar.Size = new System.Drawing.Size(104, 47);
-            this.BotonAgregar.TabIndex = 0;
-            this.BotonAgregar.Text = "Agregar";
-            this.BotonAgregar.UseVisualStyleBackColor = true;
-            // 
-            // BotonBuscar
-            // 
-            this.BotonBuscar.Location = new System.Drawing.Point(119, 39);
-            this.BotonBuscar.Name = "BotonBuscar";
-            this.BotonBuscar.Size = new System.Drawing.Size(104, 47);
-            this.BotonBuscar.TabIndex = 1;
-            this.BotonBuscar.Text = "Buscar";
-            this.BotonBuscar.UseVisualStyleBackColor = true;
+            this.BotonEliminar.Location = new System.Drawing.Point(339, 39);
+            this.BotonEliminar.Name = "BotonEliminar";
+            this.BotonEliminar.Size = new System.Drawing.Size(104, 47);
+            this.BotonEliminar.TabIndex = 3;
+            this.BotonEliminar.Text = "Eliminar";
+            this.BotonEliminar.UseVisualStyleBackColor = true;
+            this.BotonEliminar.Click += new System.EventHandler(this.BotonEliminar_Click);
             // 
             // BotonActualizar
             // 
@@ -300,33 +278,74 @@
             this.BotonActualizar.TabIndex = 2;
             this.BotonActualizar.Text = "Actualizar";
             this.BotonActualizar.UseVisualStyleBackColor = true;
+            this.BotonActualizar.Click += new System.EventHandler(this.BotonActualizar_Click);
             // 
-            // BotonEliminar
+            // BotonBuscar
             // 
-            this.BotonEliminar.Location = new System.Drawing.Point(339, 39);
-            this.BotonEliminar.Name = "BotonEliminar";
-            this.BotonEliminar.Size = new System.Drawing.Size(104, 47);
-            this.BotonEliminar.TabIndex = 3;
-            this.BotonEliminar.Text = "Eliminar";
-            this.BotonEliminar.UseVisualStyleBackColor = true;
+            this.BotonBuscar.Location = new System.Drawing.Point(119, 39);
+            this.BotonBuscar.Name = "BotonBuscar";
+            this.BotonBuscar.Size = new System.Drawing.Size(104, 47);
+            this.BotonBuscar.TabIndex = 1;
+            this.BotonBuscar.Text = "Buscar";
+            this.BotonBuscar.UseVisualStyleBackColor = true;
+            this.BotonBuscar.Click += new System.EventHandler(this.BotonBuscar_Click);
+            // 
+            // BotonAgregar
+            // 
+            this.BotonAgregar.Location = new System.Drawing.Point(9, 39);
+            this.BotonAgregar.Name = "BotonAgregar";
+            this.BotonAgregar.Size = new System.Drawing.Size(104, 47);
+            this.BotonAgregar.TabIndex = 0;
+            this.BotonAgregar.Text = "Agregar";
+            this.BotonAgregar.UseVisualStyleBackColor = true;
+            this.BotonAgregar.Click += new System.EventHandler(this.BotonAgregar_Click);
             // 
             // Grupo3
             // 
-            this.Grupo3.Controls.Add(this.Etiqueta10);
-            this.Grupo3.Controls.Add(this.CampoSaldo);
+            this.Grupo3.Controls.Add(this.BotonInformacionFinanciera);
             this.Grupo3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Grupo3.Location = new System.Drawing.Point(445, 145);
             this.Grupo3.Name = "Grupo3";
-            this.Grupo3.Size = new System.Drawing.Size(416, 71);
+            this.Grupo3.Size = new System.Drawing.Size(416, 84);
             this.Grupo3.TabIndex = 14;
             this.Grupo3.TabStop = false;
             this.Grupo3.Text = " Información financiera";
+            // 
+            // Grupo5
+            // 
+            this.Grupo5.Controls.Add(this.EtiquetaEstado);
+            this.Grupo5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Grupo5.Location = new System.Drawing.Point(499, 247);
+            this.Grupo5.Name = "Grupo5";
+            this.Grupo5.Size = new System.Drawing.Size(362, 92);
+            this.Grupo5.TabIndex = 15;
+            this.Grupo5.TabStop = false;
+            this.Grupo5.Text = "Estado";
+            // 
+            // EtiquetaEstado
+            // 
+            this.EtiquetaEstado.AutoSize = true;
+            this.EtiquetaEstado.Location = new System.Drawing.Point(6, 39);
+            this.EtiquetaEstado.Name = "EtiquetaEstado";
+            this.EtiquetaEstado.Size = new System.Drawing.Size(20, 17);
+            this.EtiquetaEstado.TabIndex = 0;
+            this.EtiquetaEstado.Text = "...";
+            // 
+            // BotonInformacionFinanciera
+            // 
+            this.BotonInformacionFinanciera.Location = new System.Drawing.Point(15, 34);
+            this.BotonInformacionFinanciera.Name = "BotonInformacionFinanciera";
+            this.BotonInformacionFinanciera.Size = new System.Drawing.Size(258, 27);
+            this.BotonInformacionFinanciera.TabIndex = 0;
+            this.BotonInformacionFinanciera.Text = "Gestionar información financiera.";
+            this.BotonInformacionFinanciera.UseVisualStyleBackColor = true;
             // 
             // FormularioGestionClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(875, 357);
+            this.Controls.Add(this.Grupo5);
             this.Controls.Add(this.Grupo3);
             this.Controls.Add(this.Grupo4);
             this.Controls.Add(this.Grupo2);
@@ -339,7 +358,8 @@
             this.Grupo2.PerformLayout();
             this.Grupo4.ResumeLayout(false);
             this.Grupo3.ResumeLayout(false);
-            this.Grupo3.PerformLayout();
+            this.Grupo5.ResumeLayout(false);
+            this.Grupo5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -359,7 +379,6 @@
         private System.Windows.Forms.Label Etiqueta7;
         private System.Windows.Forms.Label Etiqueta8;
         private System.Windows.Forms.Label Etiqueta9;
-        private System.Windows.Forms.Label Etiqueta10;
         private System.Windows.Forms.TextBox CampoNombre;
         private System.Windows.Forms.TextBox CampoApellido;
         private System.Windows.Forms.TextBox CampoDocumento;
@@ -369,10 +388,12 @@
         private System.Windows.Forms.TextBox CampoID;
         private System.Windows.Forms.TextBox CampoPassword;
         private System.Windows.Forms.TextBox CampoPasswordAgain;
-        private System.Windows.Forms.TextBox CampoSaldo;
         private System.Windows.Forms.Button BotonAgregar;
         private System.Windows.Forms.Button BotonBuscar;
         private System.Windows.Forms.Button BotonActualizar;
-        private System.Windows.Forms.Button BotonEliminar;   
+        private System.Windows.Forms.Button BotonEliminar;
+        private System.Windows.Forms.GroupBox Grupo5;
+        private System.Windows.Forms.Label EtiquetaEstado;
+        private System.Windows.Forms.Button BotonInformacionFinanciera;
     }
 }
