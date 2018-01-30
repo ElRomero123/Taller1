@@ -28,51 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Grupo1 = new System.Windows.Forms.GroupBox();
-            this.EtiquetaID = new System.Windows.Forms.Label();
-            this.EtiquetaNombre = new System.Windows.Forms.Label();
             this.Etiqueta1 = new System.Windows.Forms.Label();
             this.BotonGestionClientes = new System.Windows.Forms.Button();
             this.BotonDatosPersonales = new System.Windows.Forms.Button();
             this.BotonSalir = new System.Windows.Forms.Button();
+            this.Grupo1 = new System.Windows.Forms.GroupBox();
+            this.EtiquetaEmail = new System.Windows.Forms.Label();
+            this.EtiquetaID = new System.Windows.Forms.Label();
+            this.EtiquetaNombre = new System.Windows.Forms.Label();
             this.Grupo1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // Grupo1
-            // 
-            this.Grupo1.Controls.Add(this.EtiquetaID);
-            this.Grupo1.Controls.Add(this.EtiquetaNombre);
-            this.Grupo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Grupo1.Location = new System.Drawing.Point(12, 12);
-            this.Grupo1.Name = "Grupo1";
-            this.Grupo1.Size = new System.Drawing.Size(384, 92);
-            this.Grupo1.TabIndex = 1;
-            this.Grupo1.TabStop = false;
-            this.Grupo1.Text = "Información";
-            // 
-            // EtiquetaID
-            // 
-            this.EtiquetaID.AutoSize = true;
-            this.EtiquetaID.Location = new System.Drawing.Point(6, 55);
-            this.EtiquetaID.Name = "EtiquetaID";
-            this.EtiquetaID.Size = new System.Drawing.Size(25, 17);
-            this.EtiquetaID.TabIndex = 2;
-            this.EtiquetaID.Text = "ID:";
-            // 
-            // EtiquetaNombre
-            // 
-            this.EtiquetaNombre.AutoSize = true;
-            this.EtiquetaNombre.Location = new System.Drawing.Point(6, 27);
-            this.EtiquetaNombre.Name = "EtiquetaNombre";
-            this.EtiquetaNombre.Size = new System.Drawing.Size(62, 17);
-            this.EtiquetaNombre.TabIndex = 1;
-            this.EtiquetaNombre.Text = "Nombre:";
             // 
             // Etiqueta1
             // 
             this.Etiqueta1.AutoSize = true;
             this.Etiqueta1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Etiqueta1.Location = new System.Drawing.Point(8, 129);
+            this.Etiqueta1.Location = new System.Drawing.Point(12, 129);
             this.Etiqueta1.Name = "Etiqueta1";
             this.Etiqueta1.Size = new System.Drawing.Size(387, 24);
             this.Etiqueta1.TabIndex = 10;
@@ -80,7 +51,7 @@
             // 
             // BotonGestionClientes
             // 
-            this.BotonGestionClientes.Location = new System.Drawing.Point(11, 162);
+            this.BotonGestionClientes.Location = new System.Drawing.Point(11, 175);
             this.BotonGestionClientes.Name = "BotonGestionClientes";
             this.BotonGestionClientes.Size = new System.Drawing.Size(189, 45);
             this.BotonGestionClientes.TabIndex = 7;
@@ -91,7 +62,7 @@
             // 
             // BotonDatosPersonales
             // 
-            this.BotonDatosPersonales.Location = new System.Drawing.Point(206, 162);
+            this.BotonDatosPersonales.Location = new System.Drawing.Point(206, 175);
             this.BotonDatosPersonales.Name = "BotonDatosPersonales";
             this.BotonDatosPersonales.Size = new System.Drawing.Size(189, 45);
             this.BotonDatosPersonales.TabIndex = 8;
@@ -110,6 +81,46 @@
             this.BotonSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BotonSalir.UseVisualStyleBackColor = true;
             this.BotonSalir.Click += new System.EventHandler(this.BotonSalir_Click);
+            // 
+            // Grupo1
+            // 
+            this.Grupo1.Controls.Add(this.EtiquetaEmail);
+            this.Grupo1.Controls.Add(this.EtiquetaID);
+            this.Grupo1.Controls.Add(this.EtiquetaNombre);
+            this.Grupo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Grupo1.Location = new System.Drawing.Point(11, 12);
+            this.Grupo1.Name = "Grupo1";
+            this.Grupo1.Size = new System.Drawing.Size(384, 114);
+            this.Grupo1.TabIndex = 11;
+            this.Grupo1.TabStop = false;
+            this.Grupo1.Text = "Información";
+            // 
+            // EtiquetaEmail
+            // 
+            this.EtiquetaEmail.AutoSize = true;
+            this.EtiquetaEmail.Location = new System.Drawing.Point(6, 81);
+            this.EtiquetaEmail.Name = "EtiquetaEmail";
+            this.EtiquetaEmail.Size = new System.Drawing.Size(51, 17);
+            this.EtiquetaEmail.TabIndex = 3;
+            this.EtiquetaEmail.Text = "E-mail:";
+            // 
+            // EtiquetaID
+            // 
+            this.EtiquetaID.AutoSize = true;
+            this.EtiquetaID.Location = new System.Drawing.Point(6, 55);
+            this.EtiquetaID.Name = "EtiquetaID";
+            this.EtiquetaID.Size = new System.Drawing.Size(25, 17);
+            this.EtiquetaID.TabIndex = 2;
+            this.EtiquetaID.Text = "ID:";
+            // 
+            // EtiquetaNombre
+            // 
+            this.EtiquetaNombre.AutoSize = true;
+            this.EtiquetaNombre.Location = new System.Drawing.Point(6, 27);
+            this.EtiquetaNombre.Name = "EtiquetaNombre";
+            this.EtiquetaNombre.Size = new System.Drawing.Size(62, 17);
+            this.EtiquetaNombre.TabIndex = 1;
+            this.EtiquetaNombre.Text = "Nombre:";
             // 
             // FormularioMenuAdministrador
             // 
@@ -133,8 +144,9 @@
         #endregion
 
         private System.Windows.Forms.GroupBox Grupo1;
-        private System.Windows.Forms.Label EtiquetaID;
-        private System.Windows.Forms.Label EtiquetaNombre;
+        public System.Windows.Forms.Label EtiquetaEmail;
+        public System.Windows.Forms.Label EtiquetaID;
+        public System.Windows.Forms.Label EtiquetaNombre;
         private System.Windows.Forms.Label Etiqueta1;
         private System.Windows.Forms.Button BotonGestionClientes;
         private System.Windows.Forms.Button BotonDatosPersonales;
