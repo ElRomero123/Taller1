@@ -36,23 +36,46 @@ namespace Controladora
             return resultado;
         }
 
-        public E.Persona ObtenerCliente(long ID)
+        public E.Persona ObtenerCliente(long id)
         {
             E.Persona persona = new E.Persona();
 
             var listaRegistros = from Persona in modelo.Personas
-                                 where (Persona.ID == ID)
-                                 select new { Persona.Nombre, Persona.Apellido, Persona.Password, Persona.Email, Persona.Rol };
+                                 where (Persona.ID == id)
+                                 select new { Persona.Password, Persona.Nombre, Persona.Apellido, Persona.NDocumento, Persona.Direccion, Persona.Telefono, Persona.Email, Persona.Rol };
 
-            var registro = listaRegistros.ToArray()[0];
+            try
+            {
+                var registro = listaRegistros.ToArray()[0];
 
-            persona.Nombre = registro.Nombre;
-            persona.Apellido = registro.Apellido;
-            persona.Password = registro.Password;
-            persona.Email = registro.Email;
-            persona.Rol = registro.Rol;
+                if (registro != null)
+                {
+                    persona.Password   = registro.Password;
+                    persona.Nombre     = registro.Nombre;
+                    persona.Apellido   = registro.Apellido;
+                    persona.NDocumento = registro.NDocumento;
+                    persona.Direccion  = registro.Direccion;
+                    persona.Telefono   = registro.Telefono;
+                    persona.Email      = registro.Email;
+                    persona.Rol        = registro.Rol;
+                }
+            }
 
+            catch
+            {
+                
+            }
+            
             return persona;
+        }
+
+        public bool EliminarCliente(long id)
+        { 
+            B.Persona personaCliente = modelo.Personas.FirstOrDefault(x => x.ID == id);
+            modelo.Personas.Remove(personaCliente);
+            modelo.SaveChanges();
+
+            return true;
         }
     }
 }

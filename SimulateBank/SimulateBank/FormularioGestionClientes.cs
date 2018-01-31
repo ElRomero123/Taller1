@@ -26,20 +26,40 @@ namespace SimulateBank
                 Email      = CampoEmail.Text
             };
 
-            if (AgregarCliente(cliente))
+            if(CampoPassword.Text.GetHashCode() == CampoPasswordAgain.Text.GetHashCode())
             {
-                EtiquetaEstado.Text = "El cliente ha sido agregado exitosamente. ";
+                if (AgregarCliente(cliente))
+                {
+                    EtiquetaEstado.Text = "El cliente ha sido agregado exitosamente. ";
+                }
+
+                else
+                {
+                    EtiquetaEstado.Text = "El cliente NO se pudo agregar. ";
+                }
             }
 
             else
             {
-                EtiquetaEstado.Text = "El cliente NO se pudo agregar. ";
-            }        
+                EtiquetaEstado.Text = "Las contraseñas no coinciden. ";
+            }
         }
 
         private void BotonBuscar_Click(object sender, EventArgs e)
         {
+            long id = long.Parse(CampoID.Text);
 
+            E.Persona cliente       = BuscarCliente(id);
+
+            CampoPassword.Text = cliente.Password;
+            CampoPasswordAgain.Text = CampoPassword.Text;
+            CampoNombre.Text = cliente.Nombre;
+            CampoApellido.Text = cliente.Apellido;
+            CampoDocumento.Text = cliente.NDocumento.ToString();
+            CampoDireccion.Text = cliente.Direccion;
+            CampoTelefono.Text = cliente.Telefono;
+            CampoEmail.Text = cliente.Email;
+       
         }
 
         private void BotonActualizar_Click(object sender, EventArgs e)
@@ -49,7 +69,21 @@ namespace SimulateBank
 
         private void BotonEliminar_Click(object sender, EventArgs e)
         {
+            bool resultado;
+            long id = long.Parse(CampoID.Text);
 
+            C.Persona controladoraPersona = new C.Persona();
+            resultado = controladoraPersona.EliminarCliente(id);
+
+            if(resultado)
+            {
+                EtiquetaEstado.Text = "Cliente eliminado con éxito.";
+            }
+
+            else
+            {
+                EtiquetaEstado.Text = "No se pudo eliminar el cliente.";
+            }
         }
 
         private bool AgregarCliente(E.Persona cliente)
@@ -58,6 +92,13 @@ namespace SimulateBank
             C.Persona controladoraPersona = new C.Persona();
             var = controladoraPersona.AgregarCliente(cliente);
             return var;
+        }
+
+        private E.Persona BuscarCliente(long id)
+        {
+            C.Persona controladoraPersona = new C.Persona();
+            E.Persona cliente = controladoraPersona.ObtenerCliente(id);
+            return cliente;
         }
     }
 }
