@@ -130,5 +130,17 @@ namespace SimulateBank
             E.Persona cliente = controladoraPersona.ObtenerCliente(id);
             return cliente;
         }
+
+        private void BotonInformacionFinanciera_Click(object sender, EventArgs e)
+        {
+            FormularioGestionFinanciera GestionFinanciera = new FormularioGestionFinanciera();
+            GestionFinanciera.Show();
+            Enviar(GestionFinanciera);
+        }
+
+        private void Enviar(FormularioGestionFinanciera GestionFinanciera)
+        {
+            GestionFinanciera.EtiquetaID.Text = CampoID.Text;
+        }
     }
 }

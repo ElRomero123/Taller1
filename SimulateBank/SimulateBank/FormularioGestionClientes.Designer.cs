@@ -54,9 +54,9 @@
             this.BotonBuscar = new System.Windows.Forms.Button();
             this.BotonAgregar = new System.Windows.Forms.Button();
             this.Grupo3 = new System.Windows.Forms.GroupBox();
+            this.BotonInformacionFinanciera = new System.Windows.Forms.Button();
             this.Grupo5 = new System.Windows.Forms.GroupBox();
             this.EtiquetaEstado = new System.Windows.Forms.Label();
-            this.BotonInformacionFinanciera = new System.Windows.Forms.Button();
             this.Grupo1.SuspendLayout();
             this.Grupo2.SuspendLayout();
             this.Grupo4.SuspendLayout();
@@ -311,6 +311,16 @@
             this.Grupo3.TabStop = false;
             this.Grupo3.Text = " Información financiera";
             // 
+            // BotonInformacionFinanciera
+            // 
+            this.BotonInformacionFinanciera.Location = new System.Drawing.Point(15, 34);
+            this.BotonInformacionFinanciera.Name = "BotonInformacionFinanciera";
+            this.BotonInformacionFinanciera.Size = new System.Drawing.Size(258, 27);
+            this.BotonInformacionFinanciera.TabIndex = 0;
+            this.BotonInformacionFinanciera.Text = "Gestionar información financiera.";
+            this.BotonInformacionFinanciera.UseVisualStyleBackColor = true;
+            this.BotonInformacionFinanciera.Click += new System.EventHandler(this.BotonInformacionFinanciera_Click);
+            // 
             // Grupo5
             // 
             this.Grupo5.Controls.Add(this.EtiquetaEstado);
@@ -331,27 +341,18 @@
             this.EtiquetaEstado.TabIndex = 0;
             this.EtiquetaEstado.Text = "...";
             // 
-            // BotonInformacionFinanciera
-            // 
-            this.BotonInformacionFinanciera.Location = new System.Drawing.Point(15, 34);
-            this.BotonInformacionFinanciera.Name = "BotonInformacionFinanciera";
-            this.BotonInformacionFinanciera.Size = new System.Drawing.Size(258, 27);
-            this.BotonInformacionFinanciera.TabIndex = 0;
-            this.BotonInformacionFinanciera.Text = "Gestionar información financiera.";
-            this.BotonInformacionFinanciera.UseVisualStyleBackColor = true;
-            // 
             // FormularioGestionClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(875, 357);
+            this.ClientSize = new System.Drawing.Size(875, 356);
             this.Controls.Add(this.Grupo5);
             this.Controls.Add(this.Grupo3);
             this.Controls.Add(this.Grupo4);
             this.Controls.Add(this.Grupo2);
             this.Controls.Add(this.Grupo1);
             this.Name = "FormularioGestionClientes";
-            this.Text = "Gestión usuarios";
+            this.Text = "Gestión clientes";
             this.Grupo1.ResumeLayout(false);
             this.Grupo1.PerformLayout();
             this.Grupo2.ResumeLayout(false);
@@ -370,6 +371,7 @@
         private System.Windows.Forms.GroupBox Grupo2;
         private System.Windows.Forms.GroupBox Grupo3;
         private System.Windows.Forms.GroupBox Grupo4;
+        private System.Windows.Forms.GroupBox Grupo5;
         private System.Windows.Forms.Label Etiqueta1;
         private System.Windows.Forms.Label Etiqueta2;
         private System.Windows.Forms.Label Etiqueta3;
@@ -379,6 +381,7 @@
         private System.Windows.Forms.Label Etiqueta7;
         private System.Windows.Forms.Label Etiqueta8;
         private System.Windows.Forms.Label Etiqueta9;
+        private System.Windows.Forms.Label EtiquetaEstado;
         private System.Windows.Forms.TextBox CampoNombre;
         private System.Windows.Forms.TextBox CampoApellido;
         private System.Windows.Forms.TextBox CampoDocumento;
@@ -392,8 +395,6 @@
         private System.Windows.Forms.Button BotonBuscar;
         private System.Windows.Forms.Button BotonActualizar;
         private System.Windows.Forms.Button BotonEliminar;
-        private System.Windows.Forms.GroupBox Grupo5;
-        private System.Windows.Forms.Label EtiquetaEstado;
         private System.Windows.Forms.Button BotonInformacionFinanciera;
     }
 }
