@@ -26,6 +26,7 @@ namespace SimulateBank
         private void BotonConsulta_Click(object sender, EventArgs e)
         {
             FormularioConsulta Consulta = new FormularioConsulta();
+            Consulta.EtiquetaID.Text = EtiquetaID.Text;
             Consulta.Show();
         }
 
