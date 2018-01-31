@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.Grupo1 = new System.Windows.Forms.GroupBox();
+            this.EtiquetaEmail = new System.Windows.Forms.Label();
             this.EtiquetaID = new System.Windows.Forms.Label();
             this.EtiquetaNombre = new System.Windows.Forms.Label();
             this.BotonTransaccion = new System.Windows.Forms.Button();
@@ -36,8 +37,6 @@
             this.BotonConsulta = new System.Windows.Forms.Button();
             this.Etiqueta1 = new System.Windows.Forms.Label();
             this.BotonSalir = new System.Windows.Forms.Button();
-            this.BotonDatosPersonales = new System.Windows.Forms.Button();
-            this.EtiquetaEmail = new System.Windows.Forms.Label();
             this.Grupo1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +52,15 @@
             this.Grupo1.TabIndex = 0;
             this.Grupo1.TabStop = false;
             this.Grupo1.Text = "Información";
+            // 
+            // EtiquetaEmail
+            // 
+            this.EtiquetaEmail.AutoSize = true;
+            this.EtiquetaEmail.Location = new System.Drawing.Point(6, 81);
+            this.EtiquetaEmail.Name = "EtiquetaEmail";
+            this.EtiquetaEmail.Size = new System.Drawing.Size(51, 17);
+            this.EtiquetaEmail.TabIndex = 3;
+            this.EtiquetaEmail.Text = "E-mail:";
             // 
             // EtiquetaID
             // 
@@ -126,32 +134,11 @@
             this.BotonSalir.UseVisualStyleBackColor = true;
             this.BotonSalir.Click += new System.EventHandler(this.BotonSalir_Click);
             // 
-            // BotonDatosPersonales
-            // 
-            this.BotonDatosPersonales.Location = new System.Drawing.Point(12, 242);
-            this.BotonDatosPersonales.Name = "BotonDatosPersonales";
-            this.BotonDatosPersonales.Size = new System.Drawing.Size(189, 45);
-            this.BotonDatosPersonales.TabIndex = 6;
-            this.BotonDatosPersonales.Text = "Modificar datos personales.";
-            this.BotonDatosPersonales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BotonDatosPersonales.UseVisualStyleBackColor = true;
-            this.BotonDatosPersonales.Click += new System.EventHandler(this.BotonDatosPersonales_Click);
-            // 
-            // EtiquetaEmail
-            // 
-            this.EtiquetaEmail.AutoSize = true;
-            this.EtiquetaEmail.Location = new System.Drawing.Point(6, 81);
-            this.EtiquetaEmail.Name = "EtiquetaEmail";
-            this.EtiquetaEmail.Size = new System.Drawing.Size(51, 17);
-            this.EtiquetaEmail.TabIndex = 3;
-            this.EtiquetaEmail.Text = "E-mail:";
-            // 
             // FormularioMenuCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(604, 299);
-            this.Controls.Add(this.BotonDatosPersonales);
+            this.ClientSize = new System.Drawing.Size(604, 250);
             this.Controls.Add(this.BotonSalir);
             this.Controls.Add(this.Etiqueta1);
             this.Controls.Add(this.BotonConsulta);
@@ -178,6 +165,5 @@
         private System.Windows.Forms.Button BotonRetiro;
         private System.Windows.Forms.Button BotonConsulta;
         private System.Windows.Forms.Button BotonSalir;
-        private System.Windows.Forms.Button BotonDatosPersonales;
     }
 }

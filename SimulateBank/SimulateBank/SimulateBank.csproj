@@ -61,12 +61,6 @@
     <Compile Include="FormularioConsulta.Designer.cs">
       <DependentUpon>FormularioConsulta.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormularioDatosPersonales.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormularioDatosPersonales.Designer.cs">
-      <DependentUpon>FormularioDatosPersonales.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormularioGestionClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,9 +107,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormularioConsulta.resx">
       <DependentUpon>FormularioConsulta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormularioDatosPersonales.resx">
-      <DependentUpon>FormularioDatosPersonales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioGestionClientes.resx">
       <DependentUpon>FormularioGestionClientes.cs</DependentUpon>

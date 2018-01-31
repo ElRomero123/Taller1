@@ -37,19 +37,24 @@
             this.Grupo1 = new System.Windows.Forms.GroupBox();
             this.Grupo3 = new System.Windows.Forms.GroupBox();
             this.EtiquetaEstado = new System.Windows.Forms.Label();
+            this.Grupo4 = new System.Windows.Forms.GroupBox();
+            this.EtiquetaID = new System.Windows.Forms.Label();
+            this.BotonCargar = new System.Windows.Forms.Button();
             this.Grupo2.SuspendLayout();
             this.Grupo1.SuspendLayout();
             this.Grupo3.SuspendLayout();
+            this.Grupo4.SuspendLayout();
             this.SuspendLayout();
             // 
             // BotonRetirar
             // 
-            this.BotonRetirar.Location = new System.Drawing.Point(12, 220);
+            this.BotonRetirar.Location = new System.Drawing.Point(12, 179);
             this.BotonRetirar.Name = "BotonRetirar";
             this.BotonRetirar.Size = new System.Drawing.Size(92, 34);
             this.BotonRetirar.TabIndex = 21;
             this.BotonRetirar.Text = "Retirar";
             this.BotonRetirar.UseVisualStyleBackColor = true;
+            this.BotonRetirar.Click += new System.EventHandler(this.BotonRetirar_Click);
             // 
             // Etiqueta1
             // 
@@ -125,11 +130,42 @@
             this.EtiquetaEstado.TabIndex = 0;
             this.EtiquetaEstado.Text = "...";
             // 
+            // Grupo4
+            // 
+            this.Grupo4.Controls.Add(this.EtiquetaID);
+            this.Grupo4.Location = new System.Drawing.Point(12, 312);
+            this.Grupo4.Name = "Grupo4";
+            this.Grupo4.Size = new System.Drawing.Size(278, 64);
+            this.Grupo4.TabIndex = 26;
+            this.Grupo4.TabStop = false;
+            this.Grupo4.Text = "ID del cliente";
+            // 
+            // EtiquetaID
+            // 
+            this.EtiquetaID.AutoSize = true;
+            this.EtiquetaID.Location = new System.Drawing.Point(15, 31);
+            this.EtiquetaID.Name = "EtiquetaID";
+            this.EtiquetaID.Size = new System.Drawing.Size(20, 17);
+            this.EtiquetaID.TabIndex = 7;
+            this.EtiquetaID.Text = "...";
+            // 
+            // BotonCargar
+            // 
+            this.BotonCargar.Location = new System.Drawing.Point(12, 220);
+            this.BotonCargar.Name = "BotonCargar";
+            this.BotonCargar.Size = new System.Drawing.Size(92, 34);
+            this.BotonCargar.TabIndex = 27;
+            this.BotonCargar.Text = "Cargar";
+            this.BotonCargar.UseVisualStyleBackColor = true;
+            this.BotonCargar.Click += new System.EventHandler(this.BotonCargar_Click);
+            // 
             // FormularioRetiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 285);
+            this.ClientSize = new System.Drawing.Size(792, 388);
+            this.Controls.Add(this.BotonCargar);
+            this.Controls.Add(this.Grupo4);
             this.Controls.Add(this.Grupo3);
             this.Controls.Add(this.Grupo1);
             this.Controls.Add(this.Grupo2);
@@ -143,6 +179,8 @@
             this.Grupo1.ResumeLayout(false);
             this.Grupo3.ResumeLayout(false);
             this.Grupo3.PerformLayout();
+            this.Grupo4.ResumeLayout(false);
+            this.Grupo4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,5 +197,8 @@
         private System.Windows.Forms.ComboBox ListaCuentas;
         private System.Windows.Forms.TextBox CampoCantidad;
         private System.Windows.Forms.Button BotonRetirar;
+        private System.Windows.Forms.GroupBox Grupo4;
+        public System.Windows.Forms.Label EtiquetaID;
+        private System.Windows.Forms.Button BotonCargar;
     }
 }

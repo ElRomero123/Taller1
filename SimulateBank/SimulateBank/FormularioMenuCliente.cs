@@ -20,6 +20,7 @@ namespace SimulateBank
         private void BotonRetiro_Click(object sender, EventArgs e)
         {
             FormularioRetiro Retiro = new FormularioRetiro();
+            Retiro.EtiquetaID.Text = EtiquetaID.Text;
             Retiro.Show();
         }
 

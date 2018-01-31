@@ -30,7 +30,6 @@
         {
             this.Etiqueta1 = new System.Windows.Forms.Label();
             this.BotonGestionClientes = new System.Windows.Forms.Button();
-            this.BotonDatosPersonales = new System.Windows.Forms.Button();
             this.BotonSalir = new System.Windows.Forms.Button();
             this.Grupo1 = new System.Windows.Forms.GroupBox();
             this.EtiquetaEmail = new System.Windows.Forms.Label();
@@ -59,17 +58,6 @@
             this.BotonGestionClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BotonGestionClientes.UseVisualStyleBackColor = true;
             this.BotonGestionClientes.Click += new System.EventHandler(this.BotonGestionClientes_Click);
-            // 
-            // BotonDatosPersonales
-            // 
-            this.BotonDatosPersonales.Location = new System.Drawing.Point(206, 175);
-            this.BotonDatosPersonales.Name = "BotonDatosPersonales";
-            this.BotonDatosPersonales.Size = new System.Drawing.Size(189, 45);
-            this.BotonDatosPersonales.TabIndex = 8;
-            this.BotonDatosPersonales.Text = "Modificar datos personales.";
-            this.BotonDatosPersonales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BotonDatosPersonales.UseVisualStyleBackColor = true;
-            this.BotonDatosPersonales.Click += new System.EventHandler(this.BotonDatosPersonales_Click);
             // 
             // BotonSalir
             // 
@@ -130,7 +118,6 @@
             this.Controls.Add(this.Grupo1);
             this.Controls.Add(this.Etiqueta1);
             this.Controls.Add(this.BotonGestionClientes);
-            this.Controls.Add(this.BotonDatosPersonales);
             this.Controls.Add(this.BotonSalir);
             this.Name = "FormularioMenuAdministrador";
             this.Text = "Administrador";
@@ -149,7 +136,6 @@
         public System.Windows.Forms.Label EtiquetaNombre;
         private System.Windows.Forms.Label Etiqueta1;
         private System.Windows.Forms.Button BotonGestionClientes;
-        private System.Windows.Forms.Button BotonDatosPersonales;
         private System.Windows.Forms.Button BotonSalir;
     }
 }
