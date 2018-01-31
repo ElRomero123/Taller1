@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SimulateBank
@@ -20,7 +13,8 @@ namespace SimulateBank
         private void BotonTransaccion_Click(object sender, EventArgs e)
         {
             FormularioTransaccion Transaccion = new FormularioTransaccion();
-            Transaccion.Show();
+            Transaccion.EtiquetaID.Text = EtiquetaID.Text;
+            Transaccion.Show();  
         }
 
         private void BotonRetiro_Click(object sender, EventArgs e)

@@ -105,5 +105,58 @@ namespace Controladora
             
             return result;
         }
+
+        public long[] ObtenerCuentas(long idCliente)
+        {
+            int size = 0;
+            long[] numeroCuentas = null;
+
+            var listaRegistros = from P in modelo.Cuentas
+                                 where (P.IDCliente == idCliente)
+                                 select new { P.Numero };
+
+            try
+            {
+                var arrayRegistros = listaRegistros.ToArray();
+                size = arrayRegistros.Length;
+
+                if (size > 0)
+                {
+                    numeroCuentas = new long[size];
+                    for (int i = 0; i < size; i++)
+                    {
+                        numeroCuentas[i] = arrayRegistros[i].Numero;
+                    }
+                }
+            }
+
+            catch
+            {
+
+            }
+
+            return numeroCuentas;
+        }
+
+        public bool ActualizarSaldo(long numero, long nuevoSaldo)
+        {
+            bool result = false;
+            try
+            {
+                B.Cuenta bCuenta = modelo.Cuentas.FirstOrDefault(x => x.Numero == numero);
+
+                bCuenta.Saldo = nuevoSaldo;
+
+                modelo.SaveChanges();
+                result = true;
+            }
+
+            catch
+            {
+
+            }
+
+            return result;
+        }
     }
 }
