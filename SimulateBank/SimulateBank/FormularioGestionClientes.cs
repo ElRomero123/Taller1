@@ -1,4 +1,11 @@
-﻿using System;
+﻿/* 
+Documentación código
+
+eCliente (entidades): entidad persona simplificada instanciada para un cliente.
+cCliente (broker):    controladora persona instanciada para un cliente.
+*/
+
+using System;
 using System.Windows.Forms;
 using C = Controladora;
 using E = Entidades;
