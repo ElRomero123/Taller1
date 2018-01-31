@@ -1,4 +1,14 @@
-﻿using System.Linq;
+﻿/* 
+
+Documentación código
+
+eCliente (entidades): entidad persona simplificada instanciada para un cliente.
+bCliente (broker):    entidad persona instanciada para un cliente.
+cCliente (broker):    controladora persona instanciada para un cliente.
+
+*/
+
+using System.Linq;
 using E = Entidades;
 using B = Broker;
 
@@ -7,42 +17,39 @@ namespace Controladora
     public class Persona
     {
         private B.DBSimulateBankEntities modelo = new B.DBSimulateBankEntities();
-        public bool AgregarCliente(E.Persona personaCliente)
+        public bool AgregarCliente(E.Persona eCliente)
         {
-            bool resultado = true;
+            bool result = true;
 
             try
             {
-
                 #pragma warning disable CS0618 // El tipo o el miembro están obsoletos
                 AutoMapper.Mapper.CreateMap<E.Persona, B.Persona>();
                 #pragma warning restore CS0618 // El tipo o el miembro están obsoletos
 
-                B.Persona objetoPersona = AutoMapper.Mapper.Map<B.Persona>(personaCliente);
+                B.Persona bCliente = AutoMapper.Mapper.Map<B.Persona>(eCliente);
 
-                modelo.Personas.Add(objetoPersona);
-
+                modelo.Personas.Add(bCliente);
                 modelo.SaveChanges();
 
-                resultado = true;
+                result = true;
             }
 
-
-            catch(System.Exception ex)
+            catch
             {
-                throw ex;
+  
             }
 
-            return resultado;
+            return result;
         }
 
         public E.Persona ObtenerCliente(long id)
         {
-            E.Persona persona = new E.Persona();
+            E.Persona eCliente = new E.Persona();
 
-            var listaRegistros = from Persona in modelo.Personas
-                                 where (Persona.ID == id)
-                                 select new { Persona.Password, Persona.Nombre, Persona.Apellido, Persona.NDocumento, Persona.Direccion, Persona.Telefono, Persona.Email, Persona.Rol };
+            var listaRegistros = from P in modelo.Personas
+                                 where (P.ID == id)
+                                 select new { P.Password, P.Nombre, P.Apellido, P.NDocumento, P.Direccion, P.Telefono, P.Email, P.Rol };
 
             try
             {
@@ -50,14 +57,14 @@ namespace Controladora
 
                 if (registro != null)
                 {
-                    persona.Password   = registro.Password;
-                    persona.Nombre     = registro.Nombre;
-                    persona.Apellido   = registro.Apellido;
-                    persona.NDocumento = registro.NDocumento;
-                    persona.Direccion  = registro.Direccion;
-                    persona.Telefono   = registro.Telefono;
-                    persona.Email      = registro.Email;
-                    persona.Rol        = registro.Rol;
+                    eCliente.Password   = registro.Password;
+                    eCliente.Nombre     = registro.Nombre;
+                    eCliente.Apellido   = registro.Apellido;
+                    eCliente.NDocumento = registro.NDocumento;
+                    eCliente.Direccion  = registro.Direccion;
+                    eCliente.Telefono   = registro.Telefono;
+                    eCliente.Email      = registro.Email;
+                    eCliente.Rol        = registro.Rol;
                 }
             }
 
@@ -66,16 +73,53 @@ namespace Controladora
                 
             }
             
-            return persona;
+            return eCliente;
+        }
+
+        public bool ActualizarCliente(long id, E.Persona eCliente)
+        {
+            bool result = false;
+            try
+            {
+                B.Persona bCliente = modelo.Personas.FirstOrDefault(x => x.ID == id);
+
+                bCliente.Nombre     = eCliente.Nombre;
+                bCliente.Apellido   = eCliente.Apellido;
+                bCliente.NDocumento = eCliente.NDocumento;
+                bCliente.Direccion  = eCliente.Direccion;
+                bCliente.Telefono   = eCliente.Telefono;
+                bCliente.Email      = eCliente.Email;
+
+                modelo.SaveChanges();
+                result = true;
+            }
+
+            catch
+            {
+
+            }
+            
+            return result;
         }
 
         public bool EliminarCliente(long id)
-        { 
-            B.Persona personaCliente = modelo.Personas.FirstOrDefault(x => x.ID == id);
-            modelo.Personas.Remove(personaCliente);
-            modelo.SaveChanges();
+        {
+            bool result = false;
+            try
+            {
+                B.Persona bCliente = modelo.Personas.FirstOrDefault(x => x.ID == id);
+                modelo.Personas.Remove(bCliente);
+                modelo.SaveChanges();
 
-            return true;
+                result = true;
+            }
+
+            catch
+            {
+
+            }
+            
+            return result;
         }
     }
 }
