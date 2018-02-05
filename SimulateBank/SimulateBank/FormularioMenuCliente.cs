@@ -33,8 +33,10 @@ namespace SimulateBank
 
         private void BotonDatosPersonales_Click(object sender, EventArgs e)
         {
-            FormularioDatosPersonales DatosPersonales = new FormularioDatosPersonales();
-            DatosPersonales.Show();
+            /* Referencia a Datos Personales destruida.
+           FormularioDatosPersonales DatosPersonales = new FormularioDatosPersonales();
+           DatosPersonales.Show();
+           */
         }
 
         private void BotonSalir_Click(object sender, EventArgs e)
